@@ -4,80 +4,9 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Your Name | Portfolio</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      background: #f9f9f9;
-      color: #333;
-    }
-
-    header {
-      background: #333;
-      color: #fff;
-      padding: 2rem 1rem;
-      text-align: center;
-    }
-
-    header h1 {
-      margin: 0;
-      font-size: 2.5rem;
-    }
-
-    header p {
-      margin-top: 0.5rem;
-      font-size: 1.2rem;
-    }
-
-    nav {
-      background: #444;
-      padding: 1rem;
-      text-align: center;
-    }
-
-    nav a {
-      color: white;
-      text-decoration: none;
-      margin: 0 15px;
-      font-weight: bold;
-    }
-
-    section {
-      padding: 2rem 1rem;
-      max-width: 800px;
-      margin: auto;
-    }
-
-    h2 {
-      color: #444;
-    }
-
-    footer {
-      background: #333;
-      color: white;
-      text-align: center;
-      padding: 1rem;
-      position: fixed;
-      bottom: 0;
-      width: 100%;
-    }
-
-    @media (max-width: 600px) {
-      header h1 {
-        font-size: 1.8rem;
-      }
-
-      nav a {
-        display: block;
-        margin: 0.5rem 0;
-      }
-
-      footer {
-        position: static;
-      }
-    }
-  </style>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/YOUR-KIT-CODE.js" crossorigin="anonymous"></script>
 </head>
 <body>
 
@@ -92,6 +21,11 @@
     <a href="#contact">Contact</a>
   </nav>
 
+  <section class="hero">
+    <h1>Hello, I'm Your Name</h1>
+    <p>I’m a [Your Role] passionate about [Your Interest].</p>
+  </section>
+
   <section id="about">
     <h2>About Me</h2>
     <p>Write a short bio here. Talk about your interests, background, or what you're passionate about.</p>
@@ -99,17 +33,24 @@
 
   <section id="projects">
     <h2>Projects</h2>
-    <ul>
-      <li><strong>Project One:</strong> Description of your first project.</li>
-      <li><strong>Project Two:</strong> Description of another project.</li>
-      <!-- Add more as needed -->
-    </ul>
+    <div class="projects-grid">
+      <a href="https://github.com/yourusername/project1" target="_blank" class="project-card">
+        <i class="fas fa-code"></i>
+        <h3>Project One</h3>
+        <p>A web app that does XYZ.</p>
+      </a>
+      <a href="https://yourportfolio.com/project2" target="_blank" class="project-card">
+        <i class="fas fa-dna"></i>
+        <h3>Project Two</h3>
+        <p>A biology-focused tool for ABC analysis.</p>
+      </a>
+    </div>
   </section>
 
   <section id="contact">
     <h2>Contact</h2>
-    <p>Email: <a href="mailto:you@example.com">you@example.com</a></p>
-    <p>LinkedIn: <a href="https://www.linkedin.com/in/yourprofile" target="_blank">yourprofile</a></p>
+    <p><i class="fas fa-envelope"></i> <a href="mailto:you@example.com">you@example.com</a></p>
+    <p><i class="fab fa-linkedin"></i> <a href="https://linkedin.com/in/yourprofile" target="_blank">LinkedIn</a></p>
   </section>
 
   <footer>
